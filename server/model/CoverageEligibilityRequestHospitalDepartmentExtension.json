@@ -1,0 +1,41 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "CoverageEligibilityRequestHospitalDepartmentExtension",
+    "url": "http://example.org/fhir/StructureDefinition/CoverageEligibilityRequestHospitalDepartmentExtension",
+    "name": "CoverageEligibilityRequestHospitalDepartmentExtension",
+    "status": "draft",
+    "publisher": "Your Organization",
+    "description": "Extension to add a hospital department field to CoverageEligibilityRequest",
+    "fhirVersion": "5.0.0",
+    "kind": "complex-type",
+    "abstract": false,
+    "type": "Extension",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "derivation": "constraint",
+    "differential": {
+      "element": [
+        {
+          "id": "Extension",
+          "path": "Extension",
+          "short": "Custom extension to add a hospital department field",
+          "definition": "Custom extension to add a hospital department field to CoverageEligibilityRequest",
+          "min": 0,
+          "max": "*"
+        },
+        {
+          "id": "Extension.valueString",
+          "path": "Extension.valueString",
+          "short": "Hospital Department",
+          "definition": "The department within the hospital handling the request",
+          "min": 1,
+          "max": "1",
+          "type": [
+            {
+              "code": "string"
+            }
+          ]
+        }
+      ]
+    }
+  }
+  

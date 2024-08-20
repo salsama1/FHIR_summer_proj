@@ -1,0 +1,40 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "CoverageEligibilityRequestProfile",
+    "url": "http://example.org/fhir/StructureDefinition/CoverageEligibilityRequestProfile",
+    "name": "CoverageEligibilityRequestProfile",
+    "status": "draft",
+    "publisher": "Al-Habeeb",
+    "description": "Profile for CoverageEligibilityRequest resource with custom hospital department extension",
+    "fhirVersion": "5.0.0",
+    "kind": "resource",
+    "abstract": false,
+    "type": "CoverageEligibilityRequest",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/CoverageEligibilityRequest",
+    "derivation": "constraint",
+    "snapshot": {
+      "element": [
+        {
+          "id": "CoverageEligibilityRequest",
+          "path": "CoverageEligibilityRequest",
+          "min": 1,
+          "max": "*"
+        },
+        {
+          "id": "CoverageEligibilityRequest.extension",
+          "path": "CoverageEligibilityRequest.extension",
+          "min": 0,
+          "max": "*",
+          "type": [
+            {
+              "code": "Extension",
+              "profile": [
+                "http://example.org/fhir/StructureDefinition/CoverageEligibilityRequestHospitalDepartmentExtension"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,67 @@
+/* App.css */
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.form-input {
+  width: 300px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ffa500; 
+  border-radius: 5px;
+  color: black; 
+  font-size: 16px;
+  background-color: #fff; 
+}
+
+.form-button {
+  width: 100px;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffa500; 
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-button:hover {
+  background-color: #ff8c00; 
+}
+
+.response-data {
+  margin-top: 20px;
+  text-align: left;
+  width: 80%;
+  max-width: 600px;
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.response-data pre {
+  font-size: 12px; 
+  color: #fff; 
+}
